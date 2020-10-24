@@ -1,0 +1,47 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/guanyh-bee/springcloud-config.git
+          search-paths:
+            - springcloud-config
+
+      label: main
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://localhost:3306/lmm?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+    druid:
+      validation-query: SELECT 1
+      test-on-return: false
+      test-while-idle: true
+      test-on-borrow: false
+  rabbitmq:
+    host: 192.168.76.131
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.atlmm.springcloud.entities
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
