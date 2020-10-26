@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface PaymentService {
-    Integer create(Payment payment);
+    Integer
+    create(Payment payment);
     Payment getPaymentById( Long id);
 }

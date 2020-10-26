@@ -46,6 +46,7 @@ public class OrderController {
 
 
     }
+    //此处调用需要取消resttemplate的@loadbalance注解
     @GetMapping("consumer/payment/lb")
     public String getPaymentLb(){
         List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");
@@ -54,7 +55,14 @@ public class OrderController {
         }
         ServiceInstance serviceInstances = loadBalancer.instances(instances);
         URI uri = serviceInstances.getUri();
+        System.out.println(uri+"*************************************************************");
         return restTemplate.getForObject(uri+"/payment/lb",String.class);
+    }
+
+    @GetMapping("/consumer/zipkin")
+    public String zipkin(){
+        String forObject = restTemplate.getForObject(PAYMENT_URL + "/payment/zipkin", String.class);
+        return forObject;
     }
 
 }
