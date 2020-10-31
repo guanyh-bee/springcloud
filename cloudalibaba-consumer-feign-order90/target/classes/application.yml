@@ -1,0 +1,36 @@
+server:
+  port: 90
+
+spring:
+  application:
+    name: cloudalibaba-consumer-feign-order
+  #  datasource:
+  #    type: com.alibaba.druid.pool.DruidDataSource
+  #    driver-class-name: org.gjt.mm.mysql.Driver
+  #    url: jdbc:mysql://localhost:3306/lmm?useUnicode=true&characterEncoding=utf-8&useSSL=false
+  #    username: root
+  #    password: 123456
+  #    druid:
+  #      validation-query: SELECT 1
+  #      test-on-return: false
+  #      test-while-idle: true
+  #      test-on-borrow: false
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+feign:
+  sentinel:
+    enabled: true

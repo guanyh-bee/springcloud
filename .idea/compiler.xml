@@ -22,18 +22,23 @@
         <module name="cloud-providerconsul-payment8006" />
         <module name="cloudalibaba-config-nacos-client3377" />
         <module name="cloud-provider-payment8002" />
+        <module name="cloudalibaba-consumer-order89" />
         <module name="cloud-config-client3355" />
         <module name="cloud-provider-payment8004" />
         <module name="test" />
         <module name="cloud-api-commons" />
         <module name="cloud-provider-payment8001" />
         <module name="cloud-consumer-consul-order80" />
+        <module name="cloudalibaba-consumer-feign-order90" />
         <module name="cloud-consumer-hystrix-dashboard9001" />
+        <module name="cloudalibaba-provider-payment9004" />
+        <module name="cloudalibaba-provider-payment9003" />
         <module name="cloudalibaba-provider-payment9002" />
         <module name="cloudalibaba-provider-payment9001" />
         <module name="cloud-gateway-gateway9528" />
         <module name="cloudalbaba-consumer-nacos-order83" />
         <module name="cloud-consumer-order80" />
+        <module name="cloudalibaba-sentinel-service8401" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">

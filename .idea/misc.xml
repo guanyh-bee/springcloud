@@ -9,6 +9,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/cloudalibaba-consumer-order84/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-gateway-gateway9527/pom.xml" />
       </set>
     </option>
