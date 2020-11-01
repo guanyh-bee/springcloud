@@ -40,6 +40,7 @@
         <module>cloudalibaba-consumer-order84</module>
         <module>cloudalibaba-consumer-order89</module>
         <module>cloudalibaba-consumer-feign-order90</module>
+        <module>seata-order-service2001</module>
 
     </modules>
     <packaging>pom</packaging>

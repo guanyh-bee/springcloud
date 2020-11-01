@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/cloud-api-commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-api-commons/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-config-center-3344/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-config-center-3344/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-config-client3355/src/main/java" charset="UTF-8" />
@@ -58,10 +59,11 @@
     <file url="file://$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-order-service2001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-order-service2001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-consumer-feign-hystrix-order80/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-consumer-feign-hystrix-order80/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/test/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
